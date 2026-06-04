@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Phishing Awareness Training</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Phishing Awareness Training</h1>
+
+        <p>
+            Learn how to identify phishing attacks and stay safe online
+        </p>
+
+    </header>
+
+    <nav>
+
+        <a href="#about">About</a>
+
+        <a href="#emails">Emails</a>
+
+        <a href="#websites">Fake Websites</a>
+
+        <a href="#social">Social Engineering</a>
+
+        <a href="#tips">Tips</a>
+
+        <a href="#quiz">Quiz</a>
+
+    </nav>
+
+    <section id="hero">
+
+        <div class="hero-content">
+
+            <h2>Protect Yourself From Phishing Attacks</h2>
+
+            <p>
+                Cybercriminals use phishing to steal passwords,
+                banking details, and personal information.
+                Learn how to stay protected.
+            </p>
+
+            <button onclick="showMessage()">
+                Learn More
+            </button>
+
+        </div>
+
+    </section>
+
+    <section id="about" class="card">
+
+        <h2>What is Phishing?</h2>
+
+        <p>
+
+            Phishing is a cyberattack where attackers pretend to be trusted
+            organizations to trick users into revealing confidential information.
+
+        </p>
+
+    </section>
+
+    <section id="emails" class="card">
+
+        <h2>How to Recognize Phishing Emails</h2>
+
+        <ul>
+
+            <li>Suspicious sender email addresses</li>
+
+            <li>Urgent or threatening language</li>
+
+            <li>Unexpected attachments or links</li>
+
+            <li>Grammar and spelling mistakes</li>
+
+            <li>Requests for passwords or confidential information</li>
+
+        </ul>
+
+    </section>
+
+    <section id="websites" class="card">
+
+        <h2>How to Detect Fake Websites</h2>
+
+        <ul>
+
+            <li>Misspelled URLs</li>
+
+            <li>No HTTPS security lock</li>
+
+            <li>Poor website design</li>
+
+            <li>Fake login pages</li>
+
+            <li>Too-good-to-be-true offers</li>
+
+        </ul>
+
+    </section>
+
+    <section id="social" class="card">
+
+        <h2>Social Engineering Tactics</h2>
+
+        <p>
+            Attackers manipulate people using psychological tricks.
+        </p>
+
+        <ul>
+
+            <li>Creating urgency or fear</li>
+
+            <li>Pretending to be banks or managers</li>
+
+            <li>Emotional manipulation</li>
+
+            <li>Impersonating trusted companies</li>
+
+        </ul>
+
+    </section>
+
+    <section id="tips">
+
+        <h2>Best Practices to Stay Safe</h2>
+
+        <div class="tips-container">
+
+            <div class="tip-box">
+
+                <h3>Verify Senders</h3>
+
+                <p>
+                    Check email addresses carefully before responding.
+                </p>
+
+            </div>
+
+            <div class="tip-box">
+
+                <h3>Avoid Suspicious Links</h3>
+
+                <p>
+                    Never click unknown or shortened URLs.
+                </p>
+
+            </div>
+
+            <div class="tip-box">
+
+                <h3>Enable MFA</h3>
+
+                <p>
+                    Use Multi-Factor Authentication for extra protection.
+                </p>
+
+            </div>
+
+            <div class="tip-box">
+
+                <h3>Keep Software Updated</h3>
+
+                <p>
+                    Update systems regularly to fix vulnerabilities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="quiz" class="card">
+
+        <h2>Interactive Quiz</h2>
+
+        <div class="quiz-box">
+
+            <p>
+                1. Should you click unknown email links?
+            </p>
+
+            <button onclick="correctAnswer()">
+                No
+            </button>
+
+            <button onclick="wrongAnswer()">
+                Yes
+            </button>
+
+        </div>
+
+        <div class="quiz-box">
+
+            <p>
+                2. Which indicates a secure website?
+            </p>
+
+            <button onclick="wrongAnswer()">
+                HTTP
+            </button>
+
+            <button onclick="correctAnswer()">
+                HTTPS
+            </button>
+
+        </div>
+
+        <div class="quiz-box">
+
+            <p>
+                3. Why do attackers create urgency?
+            </p>
+
+            <button onclick="correctAnswer()">
+                To pressure victims into acting quickly
+            </button>
+
+            <button onclick="wrongAnswer()">
+                To improve internet speed
+            </button>
+
+        </div>
+
+        <h3 id="result"></h3>
+
+    </section>
+
+    <footer>
+
+        <p>
+            Phishing Awareness Website | Cybersecurity Education
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

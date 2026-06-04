@@ -1,0 +1,28 @@
+SECURE CODING REVIEW REPORT
+
+Application Reviewed:
+Python Login Application
+
+Vulnerability Identified:
+SQL Injection
+
+Description:
+The application directly inserts user input into SQL queries using string formatting.
+
+Risk:
+Attackers can bypass authentication and manipulate the database.
+
+Severity:
+Medium
+
+CWE:
+CWE-89
+
+Remediation:
+Use parameterized queries instead of string formatting.
+
+Secure Example:
+query = "SELECT * FROM users WHERE username=? AND password=?"
+
+Result:
+Static analysis successfully identified SQL injection vulnerability using Bandit.
