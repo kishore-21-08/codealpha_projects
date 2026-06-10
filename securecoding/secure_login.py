@@ -1,8 +1,9 @@
+
 import sqlite3
 import hashlib
 
-connection = sqlite3.connect("users.db")
-cursor = connection.cursor()
+conn = sqlite3.connect("users.db")
+cursor = conn.cursor()
 
 username = input("Enter Username: ")
 password = input("Enter Password: ")
@@ -16,8 +17,8 @@ cursor.execute(query, (username, hashed_password))
 result = cursor.fetchone()
 
 if result:
-    print("Login Successful")
+    print("Login Successful!")
 else:
-    print("Invalid Credentials")
+    print("Invalid Credentials!")
 
-connection.close()
+conn.close()

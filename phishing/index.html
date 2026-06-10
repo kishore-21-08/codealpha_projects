@@ -1,257 +1,182 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phishing Awarness  | Cyber Awareness Platform</title>
 
-    <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Phishing Awareness Training</title>
-
-    <link rel="stylesheet" href="style.css">
-
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    rel="stylesheet"
+  />
 </head>
-
 <body>
 
-    <header>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-shield-halved"></i>
+      PhishGuard
+    </div>
 
-        <h1>Phishing Awareness Training</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#threats">Threats</a></li>
+      <li><a href="#simulator">Simulator</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-        <p>
-            Learn how to identify phishing attacks and stay safe online
-        </p>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Protect Yourself From Phishing Attacks</h1>
 
-    </header>
+      <p>
+        Learn how attackers steal credentials, identify fake emails,
+        and improve your cybersecurity awareness with interactive training.
+      </p>
 
-    <nav>
+      <div class="hero-buttons">
+        <button class="btn-primary">Start Training</button>
+        <button class="btn-secondary">Explore Threats</button>
+      </div>
+    </div>
+  </section>
 
-        <a href="#about">About</a>
+ 
+  <section class="stats">
+    <div class="card">
+      <h2>3.4B+</h2>
+      <p>Spam Emails Sent Daily</p>
+    </div>
 
-        <a href="#emails">Emails</a>
+    <div class="card">
+      <h2>90%</h2>
+      <p>Breaches Start With Phishing</p>
+    </div>
 
-        <a href="#websites">Fake Websites</a>
+    <div class="card">
+      <h2>24/7</h2>
+      <p>Cyber Threat Monitoring</p>
+    </div>
+  </section>
 
-        <a href="#social">Social Engineering</a>
+  <!-- THREATS -->
+  <section class="threats" id="threats">
+    <h2 class="section-title">Common Phishing Threats</h2>
 
-        <a href="#tips">Tips</a>
+    <div class="threat-grid">
 
-        <a href="#quiz">Quiz</a>
+      <div class="threat-card">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email Phishing</h3>
+        <p>Fake emails designed to steal usernames and passwords.</p>
+      </div>
 
-    </nav>
+      <div class="threat-card">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>Smishing</h3>
+        <p>SMS phishing attacks that trick users into clicking malicious links.</p>
+      </div>
 
-    <section id="hero">
+      <div class="threat-card">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Vishing</h3>
+        <p>Voice phishing using phone calls and impersonation.</p>
+      </div>
 
-        <div class="hero-content">
+      <div class="threat-card">
+        <i class="fa-solid fa-qrcode"></i>
+        <h3>QR Phishing</h3>
+        <p>Malicious QR codes redirecting victims to fake websites.</p>
+      </div>
 
-            <h2>Protect Yourself From Phishing Attacks</h2>
+    </div>
+  </section>
 
-            <p>
-                Cybercriminals use phishing to steal passwords,
-                banking details, and personal information.
-                Learn how to stay protected.
-            </p>
+  
+  <section class="simulator" id="simulator">
 
-            <button onclick="showMessage()">
-                Learn More
-            </button>
+    <h2 class="section-title">Phishing Email Simulator</h2>
 
-        </div>
+    <div class="email-box">
 
-    </section>
+      <div class="email-header">
+        <p><strong>From:</strong> support@paypa1-security.com</p>
+        <p><strong>Subject:</strong> Urgent Account Verification</p>
+      </div>
 
-    <section id="about" class="card">
-
-        <h2>What is Phishing?</h2>
-
-        <p>
-
-            Phishing is a cyberattack where attackers pretend to be trusted
-            organizations to trick users into revealing confidential information.
-
-        </p>
-
-    </section>
-
-    <section id="emails" class="card">
-
-        <h2>How to Recognize Phishing Emails</h2>
-
-        <ul>
-
-            <li>Suspicious sender email addresses</li>
-
-            <li>Urgent or threatening language</li>
-
-            <li>Unexpected attachments or links</li>
-
-            <li>Grammar and spelling mistakes</li>
-
-            <li>Requests for passwords or confidential information</li>
-
-        </ul>
-
-    </section>
-
-    <section id="websites" class="card">
-
-        <h2>How to Detect Fake Websites</h2>
-
-        <ul>
-
-            <li>Misspelled URLs</li>
-
-            <li>No HTTPS security lock</li>
-
-            <li>Poor website design</li>
-
-            <li>Fake login pages</li>
-
-            <li>Too-good-to-be-true offers</li>
-
-        </ul>
-
-    </section>
-
-    <section id="social" class="card">
-
-        <h2>Social Engineering Tactics</h2>
+      <div class="email-body">
+        <p>Dear User,</p>
 
         <p>
-            Attackers manipulate people using psychological tricks.
+          Your account has been temporarily suspended due to suspicious activity.
+          Verify immediately to avoid permanent lock.
         </p>
 
-        <ul>
+        <a href="#" class="fake-link">
+          https://paypal-security-login.verify-user.com
+        </a>
 
-            <li>Creating urgency or fear</li>
-
-            <li>Pretending to be banks or managers</li>
-
-            <li>Emotional manipulation</li>
-
-            <li>Impersonating trusted companies</li>
-
-        </ul>
-
-    </section>
-
-    <section id="tips">
-
-        <h2>Best Practices to Stay Safe</h2>
-
-        <div class="tips-container">
-
-            <div class="tip-box">
-
-                <h3>Verify Senders</h3>
-
-                <p>
-                    Check email addresses carefully before responding.
-                </p>
-
-            </div>
-
-            <div class="tip-box">
-
-                <h3>Avoid Suspicious Links</h3>
-
-                <p>
-                    Never click unknown or shortened URLs.
-                </p>
-
-            </div>
-
-            <div class="tip-box">
-
-                <h3>Enable MFA</h3>
-
-                <p>
-                    Use Multi-Factor Authentication for extra protection.
-                </p>
-
-            </div>
-
-            <div class="tip-box">
-
-                <h3>Keep Software Updated</h3>
-
-                <p>
-                    Update systems regularly to fix vulnerabilities.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="quiz" class="card">
-
-        <h2>Interactive Quiz</h2>
-
-        <div class="quiz-box">
-
-            <p>
-                1. Should you click unknown email links?
-            </p>
-
-            <button onclick="correctAnswer()">
-                No
-            </button>
-
-            <button onclick="wrongAnswer()">
-                Yes
-            </button>
-
-        </div>
-
-        <div class="quiz-box">
-
-            <p>
-                2. Which indicates a secure website?
-            </p>
-
-            <button onclick="wrongAnswer()">
-                HTTP
-            </button>
-
-            <button onclick="correctAnswer()">
-                HTTPS
-            </button>
-
-        </div>
-
-        <div class="quiz-box">
-
-            <p>
-                3. Why do attackers create urgency?
-            </p>
-
-            <button onclick="correctAnswer()">
-                To pressure victims into acting quickly
-            </button>
-
-            <button onclick="wrongAnswer()">
-                To improve internet speed
-            </button>
-
-        </div>
-
-        <h3 id="result"></h3>
-
-    </section>
-
-    <footer>
-
-        <p>
-            Phishing Awareness Website | Cybersecurity Education
+        <p class="warning-text">
+          Can you identify the phishing indicators?
         </p>
+      </div>
 
-    </footer>
+      <button id="analyzeBtn">Analyze Email</button>
 
-    <script src="script.js"></script>
+      <div id="resultBox"></div>
 
+    </div>
+
+  </section>
+
+  
+  <section class="quiz" id="quiz">
+
+    <h2 class="section-title">Cyber Awareness Quiz</h2>
+
+    <div class="quiz-box">
+
+      <h3>
+        Which is a common sign of phishing?
+      </h3>
+
+      <div class="options">
+        <button class="option">Urgent threats and suspicious links</button>
+        <button class="option">Official verified domain</button>
+        <button class="option">Encrypted communication</button>
+        <button class="option">Multi-factor authentication</button>
+      </div>
+
+      <p id="quizResult"></p>
+
+    </div>
+
+  </section>
+
+
+  <footer id="contact">
+
+    <h2>PhishGuard</h2>
+
+    <p>
+      Cybersecurity Awareness & Phishing Detection Training Platform
+    </p>
+
+    <div class="socials">
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
